@@ -7,6 +7,14 @@ body {
   padding: 0;
 }
 
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 /* Cabeçalho */
 header {
   background: linear-gradient(90deg, #6a1b9a, #4a0072); /* Gradiente roxo */
