@@ -37,26 +37,26 @@ header h2 {
   color: #d1c4e9;
 }
 
-/* Seção de Detalhes */
-main section ul {
+/* Detalhes */
+main div ul {
   list-style: none;
   padding: 0;
 }
 
-main section ul li {
+main div ul li {
   margin: 10px 0;
   font-size: 1.2rem;
   color: #d1c4e9;
 }
 
 /* Sobre mim */
-main section p {
+main div p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #d1c4e9;
 }
 
-main section button {
+main div button {
   background-color: #6a1b9a;
   color: #ffffff;
   border: none;
@@ -67,12 +67,12 @@ main section button {
   transition: background-color 0.3s;
 }
 
-main section button:hover {
+main div button:hover {
   background-color: #bb86fc;
 }
 
 /* Imagem de perfil */
-main section img {
+main div img {
   display: block;
   margin: 20px auto;
   width: 150px;
