@@ -1,13 +1,13 @@
-/* Estilo geral */
+/* Configuração geral do corpo da página */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1e002f; /* Fundo roxo escuro */
-  color: #ffffff; /* Texto branco */
+  background-color: #1e002f; /* Fundo escuro para destacar o conteúdo */
+  color: #ffffff; /* Texto branco para contraste */
   margin: 0;
   padding: 0;
 }
 
-/* Container */
+/* Centralizando o conteúdo principal */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
 }
 
-/* Cabeçalho */
+/* Estilo do cabeçalho com gradiente */
 header {
   background: linear-gradient(90deg, #6a1b9a, #4a0072); /* Gradiente roxo */
   padding: 20px;
@@ -34,30 +34,58 @@ header h1 {
 header h2 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #d1c4e9;
+  color: #d1c4e9; /* Tom mais claro para contraste */
 }
 
-/* Detalhes */
-main div ul {
+/* Configuração das colunas */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  background-color: #4a0072; /* Fundo roxo escuro */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #d1c4e9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: auto; /* Altura ajustável para retângulos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column:hover {
+  transform: translateY(-10px); /* Efeito de hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para listas */
+.column ul {
   list-style: none;
   padding: 0;
 }
 
-main div ul li {
+.column ul li {
   margin: 10px 0;
   font-size: 1.2rem;
   color: #d1c4e9;
 }
 
-/* Sobre mim */
-main div p {
+/* Estilo para textos e botões */
+.column p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #d1c4e9;
 }
 
-main div button {
-  background-color: #6a1b9a;
+.column button {
+  background-color: #6a1b9a; /* Botão com cor roxa */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -67,22 +95,22 @@ main div button {
   transition: background-color 0.3s;
 }
 
-main div button:hover {
-  background-color: #bb86fc;
+.column button:hover {
+  background-color: #bb86fc; /* Cor mais clara no hover */
 }
 
-/* Imagem de perfil */
-main div img {
+/* Estilo para a imagem de perfil */
+.column img {
   display: block;
   margin: 20px auto;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 50%; /* Imagem redonda */
   border: 4px solid #bb86fc;
   box-shadow: 0 0 15px #bb86fc;
 }
 
-/* Rodapé */
+/* Rodapé simples */
 footer {
   background-color: #4a0072;
   text-align: center;
