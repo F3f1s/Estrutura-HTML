@@ -122,3 +122,87 @@ footer p {
   font-size: 1rem;
   color: #d1c4e9;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column; /* Colunas empilhadas */
+    gap: 10px;
+  }
+
+  .column {
+    width: 100%; /* Coluna ocupa toda a largura */
+    height: auto; /* Altura ajustável */
+  }
+
+  header h1 {
+    font-size: 2rem; /* Reduz tamanho do título */
+  }
+
+  header h2 {
+    font-size: 1.2rem; /* Reduz subtítulo */
+  }
+
+  .column img {
+    width: 120px; /* Reduz tamanho da imagem */
+    height: 120px;
+  }
+
+  .column button {
+    font-size: 0.9rem; /* Botão menor */
+    padding: 8px 15px;
+  }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .columns {
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 15px;
+  }
+
+  .column {
+    flex: 1 1 calc(50% - 15px); /* Duas colunas por linha */
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 2.2rem; /* Ajusta tamanho do título */
+  }
+
+  header h2 {
+    font-size: 1.3rem; /* Ajusta subtítulo */
+  }
+
+  .column img {
+    width: 140px; /* Ajusta tamanho da imagem */
+    height: 140px;
+  }
+}
+
+/* Responsividade para desktops grandes */
+@media (min-width: 1025px) {
+  .columns {
+    flex-direction: row; /* Colunas lado a lado */
+    gap: 20px;
+  }
+
+  .column {
+    flex: 1; /* Colunas dividem igualmente o espaço */
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 2.5rem; /* Tamanho original do título */
+  }
+
+  header h2 {
+    font-size: 1.5rem; /* Tamanho original do subtítulo */
+  }
+
+  .column img {
+    width: 150px; /* Tamanho original da imagem */
+    height: 150px;
+  }
+}
