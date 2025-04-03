@@ -8,6 +8,7 @@
     <title>Perfil HTML</title>
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
     <header>
         <div> 
             <h1>Fernanda Nascimento de Paula</h1>
@@ -53,5 +54,10 @@
     <footer>
         <p><strong>Direitos Reservados.</strong></p>
     </footer>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-theme');
+        }
+    </script>
 </body>
 </html>
